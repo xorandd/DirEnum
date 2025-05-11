@@ -1,7 +1,7 @@
 # DirEnum
-Directory and Subdomain Enumerator
+Directory/subdomain enumerator
 
-A script that helps you find hidden directories and subdomains on a website using a wordlist
+A script that helps you find directories and subdomains of a website using a wordlist
 
 ## Features:
 

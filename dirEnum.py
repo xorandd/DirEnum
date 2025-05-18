@@ -2,6 +2,14 @@ import sys
 import requests
 import threading
 
+def banner():
+    print(r'''   ___  _     ____              
+  / _ \(_)___/ __/__  __ ____ _ 
+ / // / / __/ _// _ \/ // /  ' \\
+/____/_/_/ /___/_//_/\_,_/_/_/_/
+          ''')
+
+
 def programUsage():
     print("-h,  --help              Print help menu")
     print("-d,  --direnum           Enumerate directories")
@@ -90,6 +98,11 @@ def enum_subdomains(url, wordlist, num_threads):
         thread.join()
 
 def main():
+
+    banner()
+
+    print()
+
     if '-h' in sys.argv or "--help" in sys.argv:
         programUsage()
         sys.exit(1)
